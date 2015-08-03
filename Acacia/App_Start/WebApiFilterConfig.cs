@@ -1,5 +1,7 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Web.Http;
 using System.Web.Http.Filters;
+using Acacia.ExceptionHandling;
 using Acacia.Logging;
 
 namespace Acacia
@@ -8,8 +10,13 @@ namespace Acacia
     {
         public static void RegisterGlobalWebApiFilters(HttpConfiguration httpConfiguration)
         {
-            var loggingFilter = (IFilter) httpConfiguration.DependencyResolver.GetService(typeof(LoggingFilterAttribute));
-            httpConfiguration.Filters.Add(loggingFilter);
+            var filters = new List<IFilter>
+            {
+                new TimerAttribute(),
+                new ExceptionHandlerAttribute()
+            };
+            
+            filters.ForEach(httpConfiguration.Filters.Add);
         }
     }
 }

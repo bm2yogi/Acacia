@@ -122,6 +122,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\RequestIdModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\DependencyConfig.cs" />
     <Compile Include="App_Start\WebApiFilterConfig.cs" />
@@ -159,12 +160,15 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MonkeyController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="ExceptionHandling\ExceptionHandlerAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logging\CustomLogger.cs" />
+    <Compile Include="Logging\CustomLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Logging\ILogger.cs" />
-    <Compile Include="Logging\LoggingFilter.cs" />
+    <Compile Include="Logging\TimerAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

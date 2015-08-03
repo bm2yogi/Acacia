@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acacia", "Acacia\Acacia.csproj", "{9E509659-B984-4B95-B56E-C54A5F2E49F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A2D9728B-8235-4B7E-82F2-CE39F623B0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{98413FA0-6226-4A05-9618-8A5FDBC4A825}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{9E509659-B984-4B95-B56E-C54A5F2E49F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E509659-B984-4B95-B56E-C54A5F2E49F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E509659-B984-4B95-B56E-C54A5F2E49F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98413FA0-6226-4A05-9618-8A5FDBC4A825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98413FA0-6226-4A05-9618-8A5FDBC4A825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98413FA0-6226-4A05-9618-8A5FDBC4A825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98413FA0-6226-4A05-9618-8A5FDBC4A825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98413FA0-6226-4A05-9618-8A5FDBC4A825} = {A2D9728B-8235-4B7E-82F2-CE39F623B0CF}
 	EndGlobalSection
 EndGlobal

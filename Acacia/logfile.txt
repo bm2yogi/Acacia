@@ -1,0 +1,85 @@
+2015-08-02 19:28:31Z | Begin Request: http://localhost:8081/api/monkey | ThreadId: 11
+2015-08-02 19:28:32Z | Executing: Monkey.Get | RequestId: 69c71752-9191-4e68-8ceb-0992d0869798 | ThreadId: 29
+2015-08-02 19:28:32Z | Executed: Monkey.Get | RequestId: 69c71752-9191-4e68-8ceb-0992d0869798 | ElapsedMS: 104 | ThreadId: 25
+2015-08-02 19:28:51Z | Begin Request: http://localhost:8081/api/monkey/3 | ThreadId: 11
+2015-08-02 19:28:51Z | Executing: Monkey.Get | RequestId: 8f0b4797-a00e-4ec4-b9cc-b6dece30e893 | ThreadId: 25
+2015-08-02 19:28:51Z | Executed: Monkey.Get | RequestId: 8f0b4797-a00e-4ec4-b9cc-b6dece30e893 | ElapsedMS: 10 | ThreadId: 25
+2015-08-02 19:29:13Z | Begin Request: http://localhost:8081/api/monkey/3 | ThreadId: 25
+2015-08-02 19:29:13Z | Executing: Monkey.Get | RequestId: 65c355cf-0387-447b-a860-0eca9f9b7aa1 | ThreadId: 29
+2015-08-02 19:29:13Z | Executed: Monkey.Get | RequestId: 65c355cf-0387-447b-a860-0eca9f9b7aa1 | ElapsedMS: 0 | ThreadId: 29
+2015-08-02 19:29:13Z | Begin Request: http://localhost:8081/favicon.ico | ThreadId: 11
+2015-08-02 19:29:37Z | Begin Request: http://localhost:8081/api/monkey/3 | ThreadId: 11
+2015-08-02 19:29:37Z | Executing: Monkey.Get | RequestId: 48b9aba2-5fa8-4f2d-b24f-f51e9df9cd98 | ThreadId: 25
+2015-08-02 19:29:37Z | Executed: Monkey.Get | RequestId: 48b9aba2-5fa8-4f2d-b24f-f51e9df9cd98 | ElapsedMS: 0 | ThreadId: 29
+2015-08-02 19:29:37Z | Begin Request: http://localhost:8081/favicon.ico | ThreadId: 11
+2015-08-02 19:29:51Z | Begin Request: http://localhost:8081/api/monkey/7 | ThreadId: 11
+2015-08-02 19:29:51Z | Unhandled Exception: You have thrown the robber. 
+	StackTrace:    at Acacia.Controllers.MonkeyController.Get(Int32 id) in c:\Users\Michael Ibarra\Projects\CSharp\Acacia\Acacia\Controllers\MonkeyController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() | ThreadId: 11
+2015-08-02 19:29:51Z | Executing: Monkey.Get | RequestId: 2e5cb859-24fe-4701-a8dd-4b80ab9c4443 | ThreadId: 11
+2015-08-02 19:29:51Z | Executed: Monkey.Get | RequestId: 2e5cb859-24fe-4701-a8dd-4b80ab9c4443 | ElapsedMS: 0 | ThreadId: 21
+2015-08-02 19:30:19Z | Begin Request: http://localhost:8081/api/monkey/7 | ThreadId: 25
+2015-08-02 19:30:19Z | Executing: Monkey.Get | RequestId: fef4f257-4205-4cb8-aa3c-bd650a9d7dba | ThreadId: 11
+2015-08-02 19:30:19Z | Unhandled Exception: You have thrown the robber. 
+	StackTrace:    at Acacia.Controllers.MonkeyController.Get(Int32 id) in c:\Users\Michael Ibarra\Projects\CSharp\Acacia\Acacia\Controllers\MonkeyController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext() | ThreadId: 25
+2015-08-02 19:30:19Z | Executed: Monkey.Get | RequestId: fef4f257-4205-4cb8-aa3c-bd650a9d7dba | ElapsedMS: 1 | ThreadId: 25
+2015-08-02 19:30:19Z | Begin Request: http://localhost:8081/favicon.ico | ThreadId: 19

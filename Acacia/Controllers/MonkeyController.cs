@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Http;
 
 namespace Acacia.Controllers
@@ -8,12 +9,19 @@ namespace Acacia.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "Woolly", "Spider", "Rhesus" };
+            //CustomLogger.LogInfo("Entered Monkey.Get");
+            //Thread.Sleep(5000);
+            //CustomLogger.LogInfo("Exiting Monkey.Get");
+            return new[] { "Woolly", "Spider", "Rhesus" };
         }
 
         // GET api/values/5
         public string Get(int id)
         {
+            if (id == 7)
+            {
+                throw new ApplicationException("You have thrown the robber.");
+            }
             return "Capuchin";
         }
 

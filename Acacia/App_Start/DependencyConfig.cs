@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using System.Web.Http;
-using Acacia.Logging;
 using Autofac;
 using Autofac.Integration.WebApi;
 
@@ -15,7 +14,6 @@ namespace Acacia
 
             builder.RegisterApiControllers(currentAssembly);
             builder.RegisterAssemblyTypes(currentAssembly).AsImplementedInterfaces();
-            builder.Register(c => new LoggingFilterAttribute(c.Resolve<ILogger>()));
 
             httpConfiguration.DependencyResolver = 
                 new AutofacWebApiDependencyResolver(builder.Build());

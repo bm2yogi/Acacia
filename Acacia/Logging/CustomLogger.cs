@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Threading;
 
 namespace Acacia.Logging
 {
@@ -6,12 +8,23 @@ namespace Acacia.Logging
     {
         public CustomLogger()
         {
-            Console.WriteLine("{0} | Custom Logger Instantiated", DateTime.Now);    
+            LogInfo("Custom Logger Instantiated");
         }
 
-        public void LogInfo(string message)
+        public static void LogInfo(string message)
         {
-            Console.WriteLine("{0} | {1}", DateTime.Now, message);
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logfile.txt");
+            var text = string.Format("{0:u} | {1} | ThreadId: {2}\n", 
+                DateTime.Now, 
+                message, 
+                Thread.CurrentThread.ManagedThreadId);
+            
+            File.AppendAllText(path, text);
+        }
+
+        void ILogger.LogInfo(string message)
+        {
+            LogInfo(message);
         }
     }
 }
